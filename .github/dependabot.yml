@@ -1,0 +1,52 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    groups:
+      angular-major: # group angular dependencies and the store dependencies together
+        patterns:
+          - "@angular*"
+          - "@ngxs*"
+          - "ngx-float-ui"
+        update-types:
+          - major
+      angular-minor: # group angular dependencies together for minor updates
+        patterns:
+          - "@angular*"
+        update-types:
+          - minor
+          - patch
+      ngxs-minor: # group ngxs dependencies together for minor updates
+        patterns:
+          - "@ngxs*"
+        update-types:
+          - minor
+          - patch
+      nx: # group nx- dependencies together
+        patterns:
+          - "@nx/nx-*"
+        update-types:
+          - major
+      eslint: # group eslint dependencies together
+        patterns:
+          - "@typescript-eslint/*"
+        update-types:
+          - major
+      all: # group all minor/patch updates
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "@fontsource/inter" # separate PR
+        update-types:
+          - minor
+          - patch
+  - package-ecosystem: "github-actions"
+    directory: ".github/workflows"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "daily"
