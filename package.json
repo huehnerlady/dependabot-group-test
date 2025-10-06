@@ -92,11 +92,11 @@
     "jest-environment-jsdom": "^30.2.0",
     "jsdom": "^26.1.0",
     "ng-mocks": "^14.13.5",
-    "playwright-ctrf-json-reporter": "^0.0.23",
+    "playwright-ctrf-json-reporter": "^0.0.24",
     "prettier": "^3.6.2",
     "prettier-eslint": "^16.4.2",
     "ts-node": "^10.9.2",
-    "typescript": "~5.8.3"
+    "typescript": "~5.9.3"
   },
   "optionalDependencies": {
     "@nx/nx-linux-x64-gnu": "21.6.2",
