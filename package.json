@@ -25,7 +25,7 @@
     "@angular-devkit/architect": "^0.2003.3",
     "@angular/animations": "^20.3.2",
     "@angular/cdk": "^20.2.4",
-    "@angular/common": "^20.3.2",
+    "@angular/common": "^20.3.9",
     "@angular/compiler": "^20.3.2",
     "@angular/core": "^20.3.2",
     "@angular/forms": "^20.3.2",
